@@ -1,0 +1,26 @@
+menu "Wake-the-pc config"
+    config PC_MACADDR
+        string "PC Mac addr to wake on lan"
+        default "5E:11:5E:D7:B1:CA"
+    
+    config BROADCAST_MACADDR
+        string "Broadcast MAC"
+        default "FF:FF:FF:FF:FF:FF"
+
+    config WIFI_SSID
+        string "SSID for wifi to connect"
+        default "MOZO"
+    
+    config WIFI_PASSWORD
+        string "Password for wifi to connect"
+        default "28011717"
+
+
+    config DB_ENDPOINT
+        string "Firebase real-time DB URL"
+        default "https://somehere.europe-west1.firebasedatabase.app/"
+
+    config MAX_HTTP_OUTPUT_BUFFER
+        int "MAX bytes to receive in response"
+        default 32
+endmenu
